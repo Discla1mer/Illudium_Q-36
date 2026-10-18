@@ -1,5 +1,5 @@
 """
-Threat-O-Rizer Intelligence Briefing Generator
+Illudium Q-36 Explosive Space Modulator is an Intelligence Briefing Generator
 ---------------------------------------
 Paste raw threat intel (CVE, IOC dump, threat report) and receive
 a structured executive briefing powered by Claude.

@@ -1,4 +1,4 @@
-# Threat-O-rizer Intelligence Briefing Generator
+# Illudium Q-36 Explosive Space Modulator Intelligence Briefing Generator
 
 A Python tool that transforms raw threat intelligence — CVEs, IOC dumps, threat reports — into structured executive briefings using the Anthropic Claude API.
 
@@ -14,7 +14,8 @@ Paste any raw threat intel and receive a structured briefing covering:
 
 - **Threat Actor / Attribution** — who is behind it and confidence level
 - **MITRE ATT&CK Mapping** — relevant tactics and techniques with IDs
-- **Recommended Remediation Steps** — prioritised, actionable, immediate actions first
+- **COMING SOON** - Alignment with MITRE ATLAS
+- **Recommended Remediation Steps** — prioritized, actionable, immediate actions first
 - **Executive Summary** — two to three sentences for leadership consumption
 
 Output is saved as a timestamped Markdown file in a `briefings/` folder.
@@ -158,7 +159,7 @@ Direct from me to you:
 I do not intend to sound snarky in the comments above. I am hoping that you can read that with a bit of humor because it's meant to be light hearted. 
 I know how many assumptions can be made and while I was learning those assumptions really messed me up. I put those notes in place to actually be a little human.
 If you don't get it right away, that's okay, just use Claude, or better yet, use Claude Code -- you will need to have a paid account though. When you do that you'll
-see that they do something different. No API key exchange, just authentication through your existing account. That's actually a bit more.... a lot more effecient, but they 
+see that they do something different. No API key exchange, just authentication through your existing account. That's actually a bit more.... a lot more efficient, but they 
 are serving a public user. This is for making a little more sense of your threats. If you never use it at least you now have a different skill and a new thing to say you
 built! :) 
 

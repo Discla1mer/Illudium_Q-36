@@ -14,7 +14,7 @@ Setup: # Only if you are doing this in a lab or dev. NOT PROD! (Hopefully)
         ANTHROPIC_API_KEY=your_key_here
 
 Usage:
-    python threat_summarizer.py
+    python illudumQ36.py
 """
 
 import os

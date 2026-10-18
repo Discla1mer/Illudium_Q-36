@@ -68,9 +68,9 @@ ANTHROPIC_API_KEY=
 - Put your API Key behing the = It annoys me that I have to highlight that "place_key_here" text so I didn't put it here.
 
 
-**Never** commit this file `.env.example` to Github. I've included for reference.
+**Never** commit your `.env` file to Github. I've included `.env.example` for reference.
 
-This means, put the .env.example (the example name is replaced with whatever you call you .env file, if you don't just leave it as .env) in the git.ignore file.
+This means, put `.env` (and any local `.env.*` files) in the `.gitignore` file, but keep `.env.example` tracked.
 These added instructions are not for people that are using Github frequently. These notes are for the person just starting. 
 
 
@@ -105,7 +105,7 @@ The script authenticates to Vault, retrieves the key at runtime, and never write
 ## Usage
 
 ```bash
-python threat-o-rizer.py
+python illudumQ36.py
 ```
 
 Paste your raw threat intelligence when prompted, then type `END` on a new line to submit.

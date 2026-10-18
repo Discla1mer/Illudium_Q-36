@@ -1,0 +1,15 @@
+# Local environment files (keep the example)
+.env
+.env.*
+!.env.example
+
+# Generated briefings
+/briefings/
+
+# Python caches
+__pycache__/
+*.py[co]
+
+# Local virtual environments
+.venv/
+venv/

@@ -100,6 +100,11 @@ export USE_VAULT=true
 
 The script authenticates to Vault, retrieves the key at runtime, and never writes it to disk.
 
+For local development, `USE_VAULT`, `VAULT_ADDR`, and `VAULT_TOKEN` can also be
+configured in `.env`, as shown in `.env.example`. Exported environment variables
+take precedence over `.env` values. When `USE_VAULT=true`, Vault errors are
+reported rather than falling back to an `ANTHROPIC_API_KEY` in `.env`.
+
 ---
 
 ## Usage
@@ -168,3 +173,16 @@ built! :)
 ## License
 
 MIT
+
+---
+
+## Tests
+
+With `python-dotenv` installed, run the offline configuration tests:
+
+```bash
+python -m unittest discover -s tests -v
+```
+
+The tests use temporary `.env` files, fake credentials, and mocked clients.
+They do not require the Anthropic or Vault packages and do not contact either service.

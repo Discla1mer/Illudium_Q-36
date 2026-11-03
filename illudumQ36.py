@@ -38,6 +38,9 @@ from dotenv import load_dotenv
 #   vault kv put secret/anthropic/api_key value="your_anthropic_key"
 
 def get_api_key() -> str:
+    # Load both backends' settings before choosing one. Existing environment
+    # variables take precedence over values in .env.
+    load_dotenv()
     use_vault = os.environ.get("USE_VAULT", "false").lower() == "true"
 
     if use_vault:
@@ -67,7 +70,6 @@ def get_api_key() -> str:
         except Exception as e:
             raise RuntimeError(f"Vault error: {e}")
     else:
-        load_dotenv()
         api_key = os.environ.get("ANTHROPIC_API_KEY")
         if not api_key:
             raise ValueError("ANTHROPIC_API_KEY not found. Check your .env file or set USE_VAULT=true.")
